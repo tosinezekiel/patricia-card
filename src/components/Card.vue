@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl h-screen mx-auto flex items-center justify-center">
     <div class="w-full flex justify-center">
-      <div class="h-56 md:h-64 lg:h-sm bg-patricia-color rounded-3xl overflow-hidden relative mx-5 w-full md:w-1/3 lg:w-1/3 z-40">
+      <div class="h-56 md:h-64 lg:h-sm bg-patricia-color rounded-2xl overflow-hidden relative mx-5 w-full md:w-1/3 lg:w-1/3 z-40">
       <img src="images/patricia.svg" alt="" class="absolute -top-6 -left-6 -z-1000">
         <div class="md:flex h-56 md:h-64 lg:h-sm">
             <div class="w-full h-56 md:h-64 lg:h-sm py-4 px-8 flex flex-col justify-between">
