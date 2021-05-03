@@ -5,10 +5,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "jest"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.14.0",
+    "@tailwindcss/postcss7-compat": "^2.1.2",
+    "@vue/cli-plugin-unit-jest": "^4.5.12",
+    "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -33,6 +40,22 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
   },
   "browserslist": [
     "> 1%",
