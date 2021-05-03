@@ -21,7 +21,10 @@ module.exports = {
         },
         height: {
             sm: '17rem',
-        }
+        },
+        zIndex: {
+            '-1000': '-1000',
+          }
       },
     },
     variants: {
